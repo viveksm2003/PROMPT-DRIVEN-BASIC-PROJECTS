@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAvAMBIgACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAAAQIEBQYH/8QAMxABAAIBAgUCAwYFBQAAAAAAAAECAwQRBRIhMZETUgZBcRQjUVNhkhUigaOxMkJDcoL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABURAQEAAAAAAAAAAAAAAAAAAAAh/9oADAMBAAIRAxEAPwD2YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZisbzO0R85YmXiegxT95q8Mf+mWnmttPWfINRb4n4FjyxjycV0uO09vUvyx5noyuI8R0/D9FGpzTa9bTFcdMcc1stp7RWI77/469olpfiHQ5eIfEmiph1V9Pnros18M7RalrxenS9Z/1V69Y6T+rhviG1/tXBKaadLpdFqoz5LaTUZOXT6bUUiaZI378kz05Y7zM/K0g6+fjLLe1vSpwisRO3LbiNr2j/tyYprE/pEyT8YaisTNo4NER1mftmbp/ZafBxKMeKuP+Maa9qxtHpcbmsR+kUx4oiI+kMPildZrMN8WfiPFMmHVfd4sO+WlLz+Fa5PvM1vpFad5tOyjvfhbjNuO8K+22xYsc+rfHEYss3rMVnaJ3msT179m3aj4U4Xm4RwTDpdTeb5ptbJk3vzctrTMzXfpvtvtv823QAAAAAAAAAAAAAAAAAAab4itOivoeLxG+PRZZjU7R2wX6Wn6VnltP6Vlz/DdFXXcY09Y1OowRWeI2rfTZOSZj7TXpvt2dxelb0tTJWLUtE1tWY3iY+cOA4FSeAcdz0zzWnCtJmz6akxE76ac1qZac8+yd9ot8p6T06g6n+AxPS3FuMTH4fbJj/EMnh/B9Bw/LbNpsH39o2tnyXtkyWj9b2mbf03ZwAAAAAAAAAAAAAAAAAAAAA1nFOB6fiGadRGXNptRbH6WTJhtH3mP22rMTFojedt46bzs2YDD4ToK8M4fi0VM+bNTFExW+aea22/bePwZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK89d5jeOndZWaUnvWJ/oCYvWf90fj3Rz090eT06eyvhHpY/ZXwC3NX3R5Rz191fJ6dI3/ljr36I9LF+XT9qwW56+6vk5q+6PKvo4/y6+E+nT2V8IJ56+6PKOenujyenT2V8I9LH7K+FgtzV91fKOevur5PSx/l0/bCJxY5746+CC3NX5Wr5Oevur5RGLHH/HT9sI9LHvvyV8EFuevXa0TtG87I9SnT+aOpGOlZ3rWIme+0dycdJ70r4QJvSJ2m0b/VPPT3V8o9Onsr4R6WPffkrv8AQFomJ7JIiIjaI2gAAAAAAAAAAAAAAAAAAAAAAAAAAB//2Q==" alt="Little Lemon">
+            <span>Limonate</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Order Online</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="reservation-form">
+            <h2>Reservations</h2>
+            <form id="reservationForm">
+                <div class="seating-options">
+                    <label>
+                        <input type="radio" name="seating" value="indoor" checked>
+                        Indoor seating
+                    </label>
+                    <label>
+                        <input type="radio" name="seating" value="outdoor">
+                        Outdoor seating
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="date"><i class="far fa-calendar-alt"></i> Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="diner"><i class="fas fa-user"></i> No. of Diners</label>
+                    <input type="number" id="diner" name="diner" required>
+                </div>
+                <div class="form-group">
+                    <label for="occasion"><i class="fas fa-glass-cheers"></i> Occasion</label>
+                    <select id="occasion" name="occasion" required>
+                        <option value="birthday">Birthday</option>
+                        <option value="anniversary">Anniversary</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="time"><i class="far fa-clock"></i> Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="far fa-envelope"></i> Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Reserve a Table</button>
+            </form>
+        </section>
+        <section class="images">
+            <img src="restaurant-interior-design-ideas-thumbnail.jpg" alt="Indoor Seating">
+            <img src="download.jpeg" alt="Chef Preparing Food">
+            <img src="images.jpeg" alt="Food Dishes">
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
